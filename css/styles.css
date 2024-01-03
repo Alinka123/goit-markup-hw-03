@@ -2,14 +2,41 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    
+}
+p,h1,h2,h3 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 a {
     text-decoration: none;
+    color: currentColor;
 }
 ul {
     list-style: none;
-
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+img {
+    display: block;
+}
+
+.container {
+        width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px; 
+        margin: 0 auto;
+        
+        } 
+    .header {
+        padding-top: 24px; 
+        padding-bottom: 24px;
+       
+        }
+        .header-container {
+            display: flex;
+    }
 .header-logo {
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway, sans-serif;
@@ -18,9 +45,21 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: 156px;
+    
+    
 }
 .header-logo-color {
     color: var(--NAVY-BLUE, #2E2F42);
+}
+.header-menu-list {
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
+    align-items: center;
+   
 }
 .header-menu-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -29,10 +68,29 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.header-menu-item {
+   
+}
     .header-menu-link:hover, 
     .header-menu-link:focus 
     {
     color: #404bbf
+    }
+    .header-navigation {
+        display: flex;
+        
+    }
+    .header-contacts {
+        display: flex;
+        font-style: normal;
+        margin-left: auto;
+       
+    }
+    .header-contacts-list {
+        display: flex;
+        margin-right: 156px;
+        gap: 40px;
+        align-items: center;
     }
 
 .header-contacts-item {
@@ -43,17 +101,31 @@ ul {
         line-height: 1.5;
        letter-spacing: 0.02em;
 }
-.header-contacts {
-    font-style: normal
-}
+
 .header-contacts-item:hover, 
 .header-contacts-item:focus  {
 color: #404bbf;
 }
-
-.main {
-    background: var(--NAVY-BLUE, #2E2F42);
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+.main-container {
+    text-align: center;
+    width: 1440px;
+    background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 188px;  
+    padding-bottom:  292px;
+    }
+
 .main-title {
     color: var(--WHITE, #FFF);
     text-align: center;
@@ -61,8 +133,14 @@ color: #404bbf;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-top: 188px;
 }
 .button {
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
     color: var(--WHITE, #FFF);
     font-size: 16px;
     font-style: normal;
@@ -71,17 +149,38 @@ color: #404bbf;
     letter-spacing: 0.04em;
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
+    border-radius: 4px;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 48px;
+   height: 56px;
+    width: 169px;
+  
+   
+    
 }
 .button:hover, .button:focus {
  background: var(--OCEAN, #404BBF);   
 }
-
+.description {
+    padding-top: 120px;
+}
+.description-list {
+    display: flex;
+    gap: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+.description-item {
+    width: calc((100% - 24px * 3) / 4);
+}
 .description-title {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-right: 24px;
 }
 .description-text {
     color: var(--SLATE, #434455);
@@ -89,35 +188,78 @@ color: #404bbf;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 24px;
 }
 
 .team {
     background-color: #F4F4FD;
+    margin-top: 120px;
+    width: 1440px;
+    margin: 0 auto;
+    
 }
-.team-title, .portfolio-title
-{
-    color: var(--NAVY-BLUE, #2E2F42);
-         text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+
+.team-title {
+   
+    
+   
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 .team-img {
     background: var(--WHITE, #FFF);
+
+  
 }
 .team-list-item {
    background-color: #FFFFFF;
+   text-align: center;
+   width: calc((100% - 24px * 3) / 4);
+   
 }
- .portfolio-item
- {
+
+.team-title,
+.portfolio-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    padding-top: 120px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 48px;
+}
+ .portfolio-item {
     color: var(--NAVY-BLUE, #2E2F42);
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-}
+        padding-top: 32px;
+ }
+ .portfolio-list-item {
+     width: calc((100% - 24px * 2) / 3);
+     background: #FFF;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+
+ }
+ .portfolio-img {
+    margin: 0 auto;
+   
+   
+}      
 .team-job, .portfolio-descr 
 {
     color: var(--SLATE, #434455);
@@ -125,13 +267,23 @@ color: #404bbf;
     font-weight: 400;
     line-height: 1.5;
      letter-spacing: 0.02em;
+     padding-top: 8px;
+     padding-bottom: 32px;
 }
-.portfolio-list-item {
-    background: #FFF;
-}
+
+
+
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    margin-top: 120px;
+    width: 1440px;
+    margin: 0 auto;
+  
+}
+.footer-content {
+   padding-top: 101.5px;
+    padding-left: 156px; 
 }
 .footer-logo {
     color: var(--IRIS, #4D5AE5);
@@ -141,6 +293,7 @@ color: #404bbf;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 .footer-logo-color {
     color: var(--CLOUD, #F4F4FD);
@@ -152,4 +305,7 @@ color: #404bbf;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    padding-top: 16px;
+    padding-bottom: 100px;
 }
