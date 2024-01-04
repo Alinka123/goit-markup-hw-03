@@ -38,7 +38,7 @@ img {
         .header-container {
             display: flex;
     }
-.header-logo, .header-logo-color {
+.header-logo {
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -72,12 +72,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.header-menu-item {
- padding-top: 24px;
- padding-bottom: 24px;
-
-}
-    .header-menu-link:hover, 
+.header-menu-link:hover, 
     .header-menu-link:focus 
     {
     color: #404bbf
@@ -107,6 +102,8 @@ img {
         font-weight: 400;
         line-height: 1.5;
        letter-spacing: 0.02em;
+       padding-top: 24px;
+       padding-bottom: 24px;
 }
 
 .header-contacts-item:hover, 
