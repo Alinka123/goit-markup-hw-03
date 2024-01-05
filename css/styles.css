@@ -17,6 +17,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 img {
     display: block;
@@ -65,6 +66,7 @@ img {
    
 }
 .header-menu-link {
+    display: block;
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 16px;
     font-weight: 500;
@@ -123,12 +125,14 @@ color: #404bbf;
     overflow: hidden;
 }
 .main {
+    width: 1440px;
     padding: 188px 0;
      background: var(--NAVY-BLUE, #2E2F42);
+     margin: 0 auto;
 }
 .main-container {
     text-align: center;
-    width: 1440px;
+    
     
    
 }
@@ -189,7 +193,7 @@ width: calc((100% - 72px) / 4);
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-right: 24px;
+   
 }
 .description-text {
     color: var(--SLATE, #434455);
@@ -197,7 +201,7 @@ width: calc((100% - 72px) / 4);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-right: 24px;
+    
 }
 
 .team {
@@ -255,9 +259,10 @@ margin-bottom: 72px;
     row-gap: 48px;
 }
 .portfolio-content {
-padding: 32px 16px;
+padding-left: 16px;
 border: 1px solid #e7e9fc;
-border-top: none;
+border-top: none; 
+padding-top: 32px;
 }
  .portfolio-item {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -265,9 +270,9 @@ border-top: none;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        padding-top: 32px;
-        text-align: center;
-        margin-bottom: 8px;
+       
+      
+      
         
  }
  .portfolio-list-item {
@@ -288,9 +293,12 @@ border-top: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-     letter-spacing: 0.02em;
-     padding-top: 8px;
-     padding-bottom: 32px;
+    letter-spacing: 0.02em;
+    padding-top: 8px;
+    padding-bottom: 32px; 
+    
+}
+.team-job {
      text-align: center;
 }
 
